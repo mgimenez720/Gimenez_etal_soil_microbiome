@@ -9,8 +9,6 @@ library(cowplot)
 library(vegan)
 
 
-setwd("/run/media/mgimenez/Seagate Expansion Drive/Suelos_Doc/Agriculture_Figures/Figure_1_2")
-
 setwd("/mnt/4tb/home/mgimenez/Matias/Agriculture/Agriculture_Figures")
 
 
