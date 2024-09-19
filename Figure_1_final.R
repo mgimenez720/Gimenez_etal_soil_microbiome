@@ -205,8 +205,8 @@ tbl_16S <- tax_table(core_16S)
 ################################################################################
 
 
-# NMDS a partir de distancia de bray-curtis de distancias a partir de taxas pertenecientes a los phylum más abundantes.
-# Además estos deben estar en al menos la mitad de las muestras y la suma debe ser mayor a 5 
+# NMDS from bray-curtis distance considering taxa distribution of Top10 phyla
+
 
 PG.ord <- ordinate(PG1, "NMDS", "bray")
 p2 = plot_ordination(PG1, PG.ord, type="samples", color="Land.use", shape="Site") 
