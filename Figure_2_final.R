@@ -9,8 +9,6 @@ library(cowplot)
 library(vegan)
 
 
-setwd("/run/media/mgimenez/Seagate Expansion Drive/Suelos_Doc/Agriculture_Figures/Figure_1_2")
-
 setwd("/mnt/4tb/home/mgimenez/Matias/Agriculture/Agriculture_Figures")
 
 physeq=readRDS("physeq_ITS.rds")
@@ -191,10 +189,8 @@ print(p1 + scale_fill_viridis())
 dev.off()
 
 ################################################################################
-#NMDS a partir del phylum
+#NMDS from phylum distribution
 ################################################################################
-# NMDS a partir de distancia de bray-curtis de distancias a partir de taxas pertenecientes a los phylum más abundantes.
-# Además estos deben estar en al menos la mitad de las muestras y la suma debe ser mayor a 5 
 
 PG.ord <- ordinate(PG1, "NMDS", "bray")
 p2 = plot_ordination(PG1, PG.ord, type="samples", color="Land.use", shape="Site") 
@@ -418,9 +414,10 @@ map_uy
 
 dev.off()
 
-
-#Analysis with fungal traits database
-
+########################################
+### Analysis using fungal traits database (FUNGuild)
+########################################
+                              
 tab <- read_delim("../matrix_count_FUNGuild.taxa.guilds.txt", delim = "\t")
 
 Taxonomy <- txt[,6]
