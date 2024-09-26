@@ -1,5 +1,3 @@
-setwd("/mnt/4tb/home/mgimenez/Matias/Agriculture/Agriculture_Figures/Figure_4")
-setwd("/mnt/4tb/home/mgimenez/Matias/Agriculture/Agriculture_Figures/Figure_4")
 
 library(tidyverse)
 library(Maaslin2)
