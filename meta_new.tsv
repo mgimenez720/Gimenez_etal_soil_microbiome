@@ -1,0 +1,25 @@
+Land.use,Parcela,Profundidad,pH,Ca,Mg,K,Na,Ac_Int,CIC,CO,MO,P,N_NO3,N_NH4,Arena,Limo,Arcilla,Clase_Textural,Abrev_textura,Season,Abundancia_lombrices,Biomasa_Lombrices,Densidad_aparente,RH
+Laurnaga,CN,arriba,5.65,25.5,3.4,0.79,0.23,0.11,30.03,3.45,5.95,5,9,29,31,31,38,Franco arcilloso,FAc,Otoño22,320,15,1.2,269
+Laurnaga,CN,arriba,5.65,25.5,3.4,0.79,0.23,0.11,30.03,3.45,5.95,5,9,29,31,31,38,Franco arcilloso,FAc,Otoño22,320,15,1.2,269
+Laurnaga,CN,arriba,5.65,25.5,3.4,0.79,0.23,0.11,30.03,3.45,5.95,5,9,29,31,31,38,Franco arcilloso,FAc,Otoño22,320,15,1.2,269
+Laurnaga,RA,arriba,5.65,25,3.11,0.39,0.25,0.08,28.86,1.9,3.28,9,15,12,31,31,38,Franco arcilloso,FAc,Otoño22,188,12,1.26,227
+Laurnaga,RA,arriba,5.65,25,3.11,0.39,0.25,0.08,28.86,1.9,3.28,9,15,12,31,31,38,Franco arcilloso,FAc,Otoño22,188,12,1.26,227
+Laurnaga,RA,arriba,5.65,25,3.11,0.39,0.25,0.08,28.86,1.9,3.28,9,15,12,31,31,38,Franco arcilloso,FAc,Otoño22,188,12,1.26,227
+Martirena,CN,arriba,6.82,16.9,3.26,0.41,0.18,0.26,20.97,3.62,6.25,3,43,5,26,50,23,Franco limoso,FL,Otoño22,364,46.6,1.1,285
+Martirena,CN,arriba,6.82,16.9,3.26,0.41,0.18,0.26,20.97,3.62,6.25,3,43,5,26,50,23,Franco limoso,FL,Otoño22,364,46.6,1.1,285
+Martirena,CN,arriba,6.82,16.9,3.26,0.41,0.18,0.26,20.97,3.62,6.25,3,43,5,26,50,23,Franco limoso,FL,Otoño22,364,46.6,1.1,285
+Martirena,RA,arriba,6.63,25,2.03,0.27,0.08,0.16,27.52,2.55,4.4,29,29,9,23,40,36,Franco arcilloso,FAc,Otoño22,174,9,1.22,233
+Martirena,RA,arriba,6.63,25,2.03,0.27,0.08,0.16,27.52,2.55,4.4,29,29,9,23,40,36,Franco arcilloso,FAc,Otoño22,174,9,1.22,233
+Martirena,RA,arriba,6.63,25,2.03,0.27,0.08,0.16,27.52,2.55,4.4,29,29,9,23,40,36,Franco arcilloso,FAc,Otoño22,174,9,1.22,233
+Poni,CN,arriba,5.85,13.4,3.31,0.34,0.52,0.11,17.67,2.52,4.35,3,9,30,29,39,32,Franco arcilloso,FAc,Primavera21,150,7.2,1.2,219
+Poni,CN,arriba,5.85,13.4,3.31,0.34,0.52,0.11,17.67,2.52,4.35,3,9,30,29,39,32,Franco arcilloso,FAc,Primavera21,150,7.2,1.2,219
+Poni,CN,arriba,5.85,13.4,3.31,0.34,0.52,0.11,17.67,2.52,4.35,3,9,30,29,39,32,Franco arcilloso,FAc,Primavera21,150,7.2,1.2,219
+Poni,RA,arriba,5.9,20.7,2.24,0.26,0.14,0.1,23.47,2.17,3.74,14,17,7,30,33,37,Franco arcilloso,FAc,Primavera21,134,2.5,1.4,192
+Poni,RA,arriba,5.9,20.7,2.24,0.26,0.14,0.1,23.47,2.17,3.74,14,17,7,30,33,37,Franco arcilloso,FAc,Primavera21,134,2.5,1.4,192
+Poni,RA,arriba,5.9,20.7,2.24,0.26,0.14,0.1,23.47,2.17,3.74,14,17,7,30,33,37,Franco arcilloso,FAc,Primavera21,134,2.5,1.4,192
+Salto,CN,arriba,5.09,17,3.68,0.63,0.14,0.09,21.5,3.42,5.9,2,55,6,12,49,39,Franco arcillo limoso ,FAcL,Primavera20,50,0.9,0.96,226
+Salto,CN,arriba,5.09,17,3.68,0.63,0.14,0.09,21.5,3.42,5.9,2,55,6,12,49,39,Franco arcillo limoso ,FAcL,Primavera20,50,0.9,0.96,226
+Salto,CN,arriba,5.09,17,3.68,0.63,0.14,0.09,21.5,3.42,5.9,2,55,6,12,49,39,Franco arcillo limoso ,FAcL,Primavera20,50,0.9,0.96,226
+Salto,RA,arriba,5.24,19.4,3.67,0.46,0.14,0.09,23.72,2.93,5.05,4,27,3,10,49,41,Arcillo limoso,AcL,Primavera20,66,0.7,1,181
+Salto,RA,arriba,5.24,19.4,3.67,0.46,0.14,0.09,23.72,2.93,5.05,4,27,3,10,49,41,Arcillo limoso,AcL,Primavera20,66,0.7,1,181
+Salto,RA,arriba,5.24,19.4,3.67,0.46,0.14,0.09,23.72,2.93,5.05,4,27,3,10,49,41,Arcillo limoso,AcL,Primavera20,66,0.7,1,181
