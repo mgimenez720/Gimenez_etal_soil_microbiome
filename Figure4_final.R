@@ -8,6 +8,10 @@ library(ggsignif)
 library(ggrepel)
 library(paletteer)
 
+#############################
+## Nitrogen cycle Analysis ##
+#############################
+
 N_tab <- read_delim("FPKM_Ncyc_genes.tsv", delim = "\t")
 
 meta <- read_delim("Metadata_Agricultura_16S.csv", delim = ",")
@@ -70,9 +74,9 @@ ntb1$dalabel[ntb1$Diff_Abundance != "NO"] <- ntb1$feature[ntb1$Diff_Abundance !=
  ntb2$Process <- prc
  
 
-################################################################
-   ###second plotting option
-################################################################
+###########################
+### Ncyc genes barplot ####
+###########################
 
    
    lvln <- c("napA","nosZ","nirK","nirS", "nasA","nasB","nrfC","nirD","nirB","ureC", "gdh_K00262","glsA","gs_K00266","gs_K00265",
@@ -102,9 +106,9 @@ ntb1$dalabel[ntb1$Diff_Abundance != "NO"] <- ntb1$feature[ntb1$Diff_Abundance !=
      scale_fill_paletteer_d("MoMAColors::Clay")-> ncyc_plot
    ncyc_plot  
    
-#####################################################################################
-###### Pcycle_metabolism
-#####################################################################################
+#########################
+### Pcycle_metabolism ###
+#########################
    
    
    
@@ -184,10 +188,12 @@ ntb1$dalabel[ntb1$Diff_Abundance != "NO"] <- ntb1$feature[ntb1$Diff_Abundance !=
    
    
    
-   ################################################
-   #Prueba
-   
+   ##########################
+   ### Pcyc genes barplot ###
+   ##########################
+
    library(readxl)
+   
    Proc_tab <- read_excel("40168_2022_1292_MOESM1_ESM.xlsx")
    Pr_tab <- Proc_tab[2:142,]
    Process <- character()
@@ -205,11 +211,6 @@ ntb1$dalabel[ntb1$Diff_Abundance != "NO"] <- ntb1$feature[ntb1$Diff_Abundance !=
    Process2 <- gsub("Pyrimidine metabolism", "Org. P metabolism",Process1)
    Process3 <- gsub("Purine metabolism", "Org. P metabolism",Process2)
    ptb2$Process <- gsub("Pyruvate metabolism", "Org. P metabolism",Process3)
-   
-   lvl1 <- c("purT", "purB","purH","purS","purL","purC",
-             "pstS","phnT","ugpC","pstB","phnC", "prsA",
-             "gdh", "ppdK","ppc",  "dut", "pyrE", "ppk","phnK","phoB",
-             "tmk","nrdD","dcd","phoH","pstC","pps","ndk")
    
    lvl2 <- c("purT", "purB","ppdK","purH","ppc","purS","dut","purL", "pyrE","purC",
              "pstS","phnT","ugpC","pstB","phnC", "prsA",
@@ -426,9 +427,9 @@ ntb1$dalabel[ntb1$Diff_Abundance != "NO"] <- ntb1$feature[ntb1$Diff_Abundance !=
      scale_fill_manual(values=c('dodgerblue4','firebrick3')) -> pcaz
     pcaz
     
-    ###########
-    ## Alpha diversity Cazymes
-    ############
+    ######################################
+    ## CAZymes Alpha diversity analysis ##
+    ######################################
     
     phylocaz <- phyloseq(otu_table(C_FPKM, taxa_are_rows = TRUE), sample_data(meta1))
    
