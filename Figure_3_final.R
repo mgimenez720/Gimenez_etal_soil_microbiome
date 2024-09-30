@@ -461,7 +461,48 @@ ntb1$dalabel[ntb1$Diff_Abundance != "NO"] <- ntb1$feature[ntb1$Diff_Abundance !=
       scale_color_aaas()
     
     alf_fun
+
+     ########################
+    ###Microbial necromass recycling enzymes
+   ########################
     
+    chit <- Table_final[which(Table_final$Substrate=="chitin"),1]
+    pept <- Table_final[which(Table_final$Substrate=="peptidoglycan"),1]
+    
+    chit_FPKM <- colSums(C_FPKM[which(rownames(C_FPKM)%in%chit$feature),])
+    pept_FPKM <- colSums(C_FPKM[which(rownames(C_FPKM)%in%pept$feature),])
+    
+    Subs_FPKM <- as.data.frame(rbind(chit_FPKM, pept_FPKM))
+    
+    
+    tab_FPKM <- pivot_longer(Subs_FPKM, cols = c("L-CN", "L-RA", "M-CN", "M-RA", "P-CN", "P-RA", "SA-CN", "SA-RA"))
+    
+    sit <- gsub("-CN", "", tab_FPKM$name )
+    sit1 <- gsub("-RA", "", sit)
+    
+    cbind(tab_FPKM, 
+          c(rep("Chitin", 8),rep("Petidoglycan",8)),
+          rep(c("NG", "AR"), 8),
+          sit1) -> ctab
+      
+   
+    colnames(ctab) <- c("Samples", "FPKM", "Substrate", "Land_use", "Site")
+   
+    
+    enz_fun <- ggplot(data=ctab, mapping = aes(x=Land_use, y = FPKM, color = Land_use))+
+      geom_jitter(mapping=aes(shape=Site), size=4, alpha=.6)+
+      geom_boxplot(outlier.shape = NA, alpha=.1)+
+      geom_signif(comparisons=list(c("AR", "NG")), map_signif_level = TRUE, textsize=5)+
+      facet_grid(~Substrate)+
+      theme_classic()+
+      xlab("Land use")+
+      ylab("CAZYmes FPKM")+
+      ggtitle(label = "C")+
+      ylim(c(NA, 140))+
+      scale_color_manual(values=c("#3A488AFF","#E5AD4FFF"))
+    
+    enz_fun
+
     
    ######################
    ###Final Figure layout 
