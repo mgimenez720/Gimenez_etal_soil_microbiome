@@ -9,7 +9,6 @@ library(cowplot)
 library(vegan)
 
 
-setwd("/mnt/4tb/home/mgimenez/Matias/Agriculture/Agriculture_Figures")
 
 physeq=readRDS("physeq_ITS.rds")
 
