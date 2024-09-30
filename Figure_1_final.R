@@ -9,9 +9,6 @@ library(cowplot)
 library(vegan)
 
 
-setwd("/mnt/4tb/home/mgimenez/Matias/Agriculture/Agriculture_Figures")
-
-
 physeq=readRDS("physeq_16S.rds")
 
 otu_tab <- otu_table(physeq)
@@ -393,7 +390,7 @@ dev.off()
 
 
 ###########################################
-##Sampling sites and map
+## Sampling sites and map
 ###########################################
 
 require(sf)
