@@ -31,8 +31,7 @@ N_FPKM <- column_to_rownames(N_tab, var = "target")
 fit_data <- Maaslin2(
   N_FPKM, meta1, 'Out_NCyc2_maaslin2',
   min_abundance = 0.005,
-  fixed_effects = c('Treatment'), #P, Arena, Arcilla, Limo, CIC
-  #random_effects = c('Sitio'), #'CO'
+  fixed_effects = c('Treatment'),
   plot_heatmap = TRUE,
   plot_scatter = TRUE,
   # standardize = FALSE,
@@ -154,8 +153,7 @@ ntb1$dalabel[ntb1$Diff_Abundance != "NO"] <- ntb1$feature[ntb1$Diff_Abundance !=
    fit_data <- Maaslin2(
      P_FPKM, meta1, 'Out_PCyc2_maaslin2',
      min_abundance = 0.005,
-     fixed_effects = c('Treatment'), #P, Arena, Arcilla, Limo, CIC
-     #random_effects = c('Sitio'), #'CO'
+     fixed_effects = c('Treatment'), 
      plot_heatmap = TRUE,
      plot_scatter = TRUE,
      # standardize = FALSE,
@@ -462,9 +460,9 @@ ntb1$dalabel[ntb1$Diff_Abundance != "NO"] <- ntb1$feature[ntb1$Diff_Abundance !=
     
     alf_fun
 
-     ########################
-    ###Microbial necromass recycling enzymes
-   ########################
+   #############################################
+   ### Microbial necromass recycling enzymes ###
+   #############################################
     
     chit <- Table_final[which(Table_final$Substrate=="chitin"),1]
     pept <- Table_final[which(Table_final$Substrate=="peptidoglycan"),1]
